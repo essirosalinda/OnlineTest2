@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contact</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="welcome-card">
+    <img class="profile-image" src="/assets/path.jpg" alt="" />
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        <span>If you have any questions or thoughts don't hesitate to contact me😊</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button color="tertiary" expand="block" (click)="sendContact()"
+      >Contact me!<ion-icon class="icon" name="paper-plane-outline"></ion-icon
+    ></ion-button>
+  </ion-toolbar>
+</ion-footer>
